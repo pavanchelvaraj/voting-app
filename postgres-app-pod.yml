@@ -11,4 +11,9 @@ spec:
       image: postgres:9.4
       ports:
         - name: postgres-port
-          containerPort: 6379
+          containerPort: 5432
+      env:
+        name: POSTGRES_USER
+        value: "postgres"
+        name: POSTGRES_PASSWORD
+        value: "postgres"
